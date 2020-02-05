@@ -4,34 +4,32 @@
       <el-menu
         default-active="2"
         class="el-menu-vertical-demo"
-        @open="handleOpen"
-        @close="handleClose"
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
       >
         <el-menu-item index="1">
-          <i class="icon iconfont icon-shouyin"></i>
+          <!-- <div class="icon iconfont icon-shouyin"></div> -->
           <span slot="title">收银</span>
         </el-menu-item>
         <el-menu-item index="2">
-          <i class="icon iconfont icon-dianpu"></i>
+          <!-- <i class="icon iconfont icon-dianpu"></i> -->
           <span slot="title">店铺</span>
         </el-menu-item>
         <el-menu-item index="3">
-          <i class="icon iconfont icon-shangpin"></i>
+          <!-- <i class="icon iconfont icon-shangpin"></i> -->
           <span slot="title">商品</span>
         </el-menu-item>
         <el-menu-item index="4">
-          <i class="icon iconfont icon-huiyuan"></i>
+          <!-- <i class="icon iconfont icon-huiyuan"></i> -->
           <span slot="title">会员</span>
         </el-menu-item>
         <el-menu-item index="5">
-          <i class="icon iconfont icon-tongji"></i>
+          <!-- <i class="icon iconfont icon-tongji"></i> -->
           <span slot="title">统计</span>
         </el-menu-item>
         <el-menu-item index="6">
-          <i class="icon iconfont icon-shezhi"></i>
+          <!-- <i class="icon iconfont icon-shezhi"></i> -->
           <span slot="title">设置</span>
         </el-menu-item>
       </el-menu>
@@ -54,7 +52,12 @@ export default {
       font-size: 20px;
       margin: 0;
       padding: 0;
-      color: #fff
+      color: #fff;
+      display: inline-block;
+    }
+    
+    span{
+      display: inline-block;
     }
   }
 }
